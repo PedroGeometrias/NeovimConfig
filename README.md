@@ -11,7 +11,7 @@ This repository contains my personal Neovim configuration, including some cool k
 2. Clone this repository to your Neovim configuration directory using HTTPS:
 
    ```bash
-        git clone https://github.com/your-username/neovim-config.git ~/.config/nvim.
+        git clone https://github.com/your-username/neovim-config.git ~/.config/nvim  
    ```
    >- **Note:** Adjust the path according to your Neovim installation on Linux.
 
@@ -22,6 +22,6 @@ This repository contains my personal Neovim configuration, including some cool k
 2. Clone this repository to your Neovim configuration directory using HTTPS:
  
    ```bash
-        git clone https://github.com/your-username/neovim-config.git $HOME/AppData/Local/nvim.
+        git clone https://github.com/your-username/neovim-config.git $HOME/AppData/Local/nvim  
    ```
    >- **Note:** Adjust the path according to your Neovim installation on Windows.
