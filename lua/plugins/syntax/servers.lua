@@ -5,3 +5,4 @@ require("plugins.syntax.html")       -- Load html configuration
 require("plugins.syntax.lua_ls")     -- Load lua_ls configuration
 require("plugins.syntax.vim")       --load vimls configuration
 require("plugins.syntax.clangd")  --load C/C++ configuration
+require("plugins.syntax.assembly") --load assembly lsp configuration

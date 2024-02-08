@@ -1,3 +1,8 @@
+--[[ comment plugin
+Normal and Visual : 
+    gc -> commenting in line 
+    gb -> commenting in blocks
+]]
 return {
     'numToStr/Comment.nvim',
     opts = {

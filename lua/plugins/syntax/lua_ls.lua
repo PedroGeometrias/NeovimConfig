@@ -11,6 +11,7 @@ lspconfig.lua_ls.setup {
             },
             diagnostics = {
                 -- Get the language server to recognize the `vim` global
+                disable = {"lowercase-global","trailing-space"},
                 globals = {
                     'vim',
                     'require'
