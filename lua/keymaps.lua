@@ -10,8 +10,6 @@ local function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
--- Set the mapleader to space.
-vim.g.mapleader = " "
 
 --function to read the file
 function cobol_mainframe_template()
@@ -21,6 +19,11 @@ function cobol_mainframe_template()
     -- Execute the :read command to insert the file content into the buffer
     vim.cmd("read " .. template_file)
 end
+
+-- Set the mapleader to space.
+vim.g.mapleader = " "
+
+
 
 -- Create the command to generate COBOL mainframe template
 vim.cmd("command! -nargs=0 Cobmain lua cobol_mainframe_template()")

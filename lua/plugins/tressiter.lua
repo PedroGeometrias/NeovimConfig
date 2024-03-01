@@ -1,4 +1,4 @@
---treesitter configo
+--treesitter config
 return {
     {
         "nvim-treesitter/nvim-treesitter",
