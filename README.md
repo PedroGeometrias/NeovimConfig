@@ -43,7 +43,7 @@ This repository contains my personal Neovim configuration.
 
 Why?
 
-This configuration is meticulously crafted to optimize your Neovim experience, prioritizing seamless navigation within and across files while enhancing cursor movement efficiency. By tailoring Neovim to your workflow without compromising its fundamental principles, this configuration aims to achieve the following key benefits:
+This configuration is meticulously crafted to optimize my Neovim experience, prioritizing seamless navigation within and across files while enhancing cursor movement efficiency. By tailoring Neovim to mine workflow without compromising its fundamental principles, this configuration aims to achieve the following key benefits:
 
 1.   Efficient Navigation: Streamlined key mappings and intuitive shortcuts enable swift movement within files and quick traversal between different parts of your codebase. Whether you're jumping to specific lines, searching for symbols, or navigating splits and tabs, this configuration ensures minimal friction in your navigation workflow.
 
