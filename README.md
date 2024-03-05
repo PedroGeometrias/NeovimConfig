@@ -5,8 +5,11 @@ This repository contains my personal Neovim configuration.
 ## Sections
 
 [Why](#why)
+
 [Main Points](#main-points)
+
 [Installation](#installation)
+
 [Credits](#credits)
 
 ## Directory Structure
