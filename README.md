@@ -19,7 +19,27 @@ This repository contains my personal Neovim configuration.
 ├── lua
 |   ├── /plugins   
 |   |   │   ├── /syntax
+|   |   │   ├── assembly.lua
+|   |   │   ├── clangd.lua
+|   |   │   ├── html.lua
+|   |   │   ├── lua_ls.lua
+|   |   │   ├── markdown.lua
+|   |   │   ├── servers.lua
+|   |   │   ├── tsserver.lua
+|   |   │   ├── vim.lua
 |   |   │   └── ...
+|   │   ├── auto-pairs.lua
+|   │   ├── cmp.lua
+|   │   ├── cobol.lua
+|   │   ├── colorizer.lua
+|   │   ├── colorScheme.lua
+|   │   ├── comment.lua
+|   │   ├── harpoon.lua
+|   │   ├── lsp-config.lua
+|   │   ├── null-ls.lua
+|   │   ├── plenary.lua
+|   │   ├── telescope.lua
+|   │   ├── tressiter.lua
 │   |   └── ...
 │   ├── cobolTemplate.cob
 │   ├── plugins.lua
@@ -29,7 +49,7 @@ This repository contains my personal Neovim configuration.
 ├── README.md
 └── ...
 ```
-> **Note:** It's just an representation of the overall structure of the config.
+> **Note:** It's just an illustration, my configuration is always changing.
 
 ## Why <a name="why"></a>
 
