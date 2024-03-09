@@ -9,4 +9,3 @@ lspconfig.asm_lsp.setup {
         return vim.fn.fnamemodify(fname, ':p:h') -- Set the root directory to the directory of the current file
     end,
 }
-

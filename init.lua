@@ -17,4 +17,5 @@ local options = require("pedroConfiguracoes")
 options.setup()
 
 require("keymaps")
+require("requireMappings")
 require("lazy").setup("plugins")

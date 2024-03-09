@@ -41,12 +41,16 @@ M.options = {
 -- Apply configurations to Neovim
 function M.setup()
     for option, value in pairs(M.options) do
-        vim.opt[option] = value
+        -- Set the option if it exists
+        if vim.opt[option] then
+            vim.opt[option] = value
+        else
+            -- Handle unsupported options or typos
+            print("Option not found:", option)
+        end
     end
-
-    -- Append "alpha" format to nrformats option for incrementing letters
+ -- Append "alpha" format to nrformats option for incrementing letters
     vim.opt.nrformats:append("alpha")
 end
-
 return M
 
