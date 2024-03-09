@@ -2,6 +2,16 @@
 
 This repository contains my personal Neovim configuration.
 
+## Sections
+
+[Why](#why)
+
+[Main Points](#main-points)
+
+[Installation](#installation)
+
+[Credits](#credits)
+
 ## Directory Structure
 ```
 .config/nvim
@@ -41,20 +51,20 @@ This repository contains my personal Neovim configuration.
 ```
 > **Note:** It's just an illustration, my configuration is always changing.
 
-Why?
+## Why <a name="why"></a>
 
-This configuration is meticulously crafted to optimize your Neovim experience, prioritizing seamless navigation within and across files while enhancing cursor movement efficiency. By tailoring Neovim to your workflow without compromising its fundamental principles, this configuration aims to achieve the following key benefits:
+This configuration is meticulously crafted to optimize my Neovim experience, prioritizing seamless navigation within and across files while enhancing cursor movement efficiency, without compromising its fundamental principles, this configuration aims to achieve the following key benefits:
 
-1.   Efficient Navigation: Streamlined key mappings and intuitive shortcuts enable swift movement within files and quick traversal between different parts of your codebase. Whether you're jumping to specific lines, searching for symbols, or navigating splits and tabs, this configuration ensures minimal friction in your navigation workflow.
+1.   **Efficient Navigation:** Smooth movement within files and across your codebase with streamlined key mappings and intuitive shortcuts, with some plugins that help with that quest.
 
-2.    Enhanced Cursor Control: Fine-tuned settings and visual cues empower precise cursor manipulation, allowing you to effortlessly navigate and edit code with precision. From smart indentation and auto-formatting to seamless visual mode adjustments, every aspect of cursor control is optimized for fluid and intuitive editing.
+2.    **Enhanced Cursor Control:** Enjoy precise cursor manipulation and seamless code editing with fine-tuned settings and visual cues.
 
-3.    Customization Without Compromise: Neovim's extensibility is fully leveraged to accommodate your unique preferences and requirements. While the configuration introduces enhancements for productivity and usability, it preserves Neovim's core principles, ensuring a seamless and unobtrusive editing experience that aligns with your workflow.
+3.    **Customization Without Compromise:** My main focus was making the configuration process fun, messing with NeoVim's incredible cuztomization capabilities, without removing its essence.
 
 In summary, this configuration prioritizes speed, efficiency, and customization, offering a tailored Neovim environment that empowers you to focus on writing code without being encumbered by unnecessary complexities.
 
 
-## Main Points
+## Main Points <a name="main-points"></a>
 
 ### Key Mappings
 
@@ -108,7 +118,7 @@ To streamline the setup process, I utilize a central file named `servers.lua`. T
 I have added some plugins, but I just can't stop expanding and messing around with my config, so the plugins might change in the future.
 
 ---
-## Installation
+## Installation <a name="installation"></a>
 
 Before proceeding with the installation, ensure you have Neovim installed on your system. Additionally, make sure you have Git installed to clone this repository.
 
@@ -167,7 +177,7 @@ Feel free to explore and customize the configuration to suit your preferences. H
   
 ---
 
-##### Credits
+##### Credits <a name="credits"></a>
 - [ThePrimeagen](https://www.youtube.com/@ThePrimeagen)
 - [typecraft](https://www.youtube.com/@typecraft_dev)
 - [chris@machine](https://youtu.be/ctH-a-1eUME?si=K0w9GymVUW7bHsXj)
