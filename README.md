@@ -51,6 +51,7 @@ This repository contains my personal Neovim configuration.
 │   ├── plugins.lua
 │   ├── pedroConfiguracoes.lua
 │   ├── keymaps.lua
+│   ├── requireMappings.lua
 │   └── ...
 ├── README.md
 └── ...
