@@ -18,16 +18,16 @@ This repository contains my personal Neovim configuration.
 ├── init.lua
 ├── lua
 |   ├── /plugins   
-|   |   │   ├── /syntax
-|   |   │   ├── assembly.lua
-|   |   │   ├── clangd.lua
-|   |   │   ├── html.lua
-|   |   │   ├── lua_ls.lua
-|   |   │   ├── markdown.lua
-|   |   │   ├── servers.lua
-|   |   │   ├── tsserver.lua
-|   |   │   ├── vim.lua
-|   |   │   └── ...
+|   |   │   └── /syntax
+|   |   │       ├── assembly.lua
+|   |   │       ├── clangd.lua
+|   |   │       ├── html.lua
+|   |   │       ├── lua_ls.lua
+|   |   │       ├── markdown.lua
+|   |   │       ├── servers.lua
+|   |   │       ├── tsserver.lua
+|   |   │       ├── vim.lua
+|   |   │       └── ...
 |   │   ├── auto-pairs.lua
 |   │   ├── cmp.lua
 |   │   ├── cobol.lua
@@ -41,10 +41,17 @@ This repository contains my personal Neovim configuration.
 |   │   ├── telescope.lua
 |   │   ├── tressiter.lua
 │   |   └── ...
+│   ├── /mappings
+│   │   ├── customCommands.lua
+│   │   ├── navigation.lua
+│   │   ├── splitAndTab.lua
+│   │   ├── textManipulation.lua
+│   │   └── ...
 │   ├── cobolTemplate.cob
 │   ├── plugins.lua
 │   ├── pedroConfiguracoes.lua
 │   ├── keymaps.lua
+│   ├── requireMappings.lua
 │   └── ...
 ├── README.md
 └── ...
