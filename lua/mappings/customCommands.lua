@@ -1,3 +1,4 @@
+-- here I'm declaring some commands
 --function to read the file
 function cobol_mainframe_template()
     -- Path to the file containing the template

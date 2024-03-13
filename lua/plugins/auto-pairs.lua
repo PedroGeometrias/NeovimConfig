@@ -1,4 +1,4 @@
---dont really like autopairs, but trying it for a little bit
+--don't really like autopairs, but trying it for a little bit
  return {
      'windwp/nvim-autopairs',
      event = "InsertEnter",
