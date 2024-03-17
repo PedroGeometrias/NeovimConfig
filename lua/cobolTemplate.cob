@@ -11,7 +11,8 @@
        DATA DIVISION.
        WORKING-STORAGE SECTION.
        01 WS-VARIABLES.
-          05 WS-VAR1 PIC X(10).
+          05 WS-VAR1 PIC
+              X(10).                                                    
           05 WS-VAR2 PIC 9(5).
 
        PROCEDURE DIVISION.

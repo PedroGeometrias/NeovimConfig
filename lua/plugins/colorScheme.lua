@@ -1,10 +1,9 @@
---color scheme for now is darkrose(really good)
 return {
-    'severij/vadelma', 
+    "EdenEast/nightfox.nvim", 
     lazy = false,
     priority = 1000,
     config = function()
-        vim.cmd("colorscheme vadelma")
+        vim.cmd("colorscheme carbonfox")
     end,
 }
 

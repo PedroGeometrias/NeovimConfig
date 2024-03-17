@@ -1,6 +1,7 @@
 local M = {}
 -- Configuration options for Neovim settings
 M.options = {
+    syntax = "enable",              -- Enable syntax 
     autoindent = true,          -- Enable auto-indentation
     smartindent = true,         -- Enable smart-indentation
     tabstop = 4,                -- Set tab width to 4 spaces
@@ -31,11 +32,16 @@ M.options = {
     colorcolumn = "120",        -- Highlight column at 120 characters
     updatetime = 20,            -- Set time (in milliseconds) for updating text
     scrolloff = 15,             -- Set minimum lines to keep above/below cursor when scrolling
-    mouse = "a",                -- Enable mouse support
+    mouse = "",                 -- Disable mouse support
     guicursor = "a:block",      -- Set GUI cursor to block shape
     title = true,               -- Show the titlebar
     titlestring = "Neovim - %t",-- Set the titlestring format
     guifont = "MesloLGS NF:h18",-- Set the GUI font
+    wrapscan = true,            -- Enable wrapscan, so I can search the whole file
+    hidden = true,              -- Switch between files without saving changes 
+    cursorcolumn = true,        -- Highlights the column where the cursor is located
+    lazyredraw = true,          -- For improve performance
+    timeoutlen = 1500,          -- setting the time for a mapped key
 }
 
 -- Apply configurations to Neovim
