@@ -56,7 +56,7 @@ This repository contains my personal Neovim configuration.
 ├── README.md
 └── ...
 ```
-> **Note:** It's just an illustration, my configuration is always changing.
+> **Note:** It's an illustration, my configuration is always changing.
 
 ## Why <a name="why"></a>
 
@@ -66,10 +66,7 @@ This configuration is meticulously crafted to optimize my Neovim experience, pri
 
 2.    **Enhanced Cursor Control:** Enjoy precise cursor manipulation and seamless code editing with fine-tuned settings and visual cues.
 
-3.    **Customization Without Compromise:** My main focus was making the configuration process fun, messing with NeoVim's incredible cuztomization capabilities, without removing its essence.
-
-In summary, this configuration prioritizes speed, efficiency, and customization, offering a tailored Neovim environment that empowers you to focus on writing code without being encumbered by unnecessary complexities.
-
+3.    **Customization Without Compromise:** My main focus was making the configuration process fun, messing with NeoVim's incredible customization capabilities, without removing its essence.
 
 ## Main Points <a name="main-points"></a>
 
@@ -99,7 +96,7 @@ I've implemented a configuration file inspired by [chris@machine](https://youtu.
 - Split Management: Opening new splits below or to the right of the current split.
 - Terminal and GUI Settings: Enabling true colors in the terminal, always showing the sign column, disabling error bells, disabling line wrapping, and setting the file encoding to UTF-8.
 - Backup and Undo Settings: Disabling backup files, disabling writing backup files before overwriting, disabling swap files, enabling persistent undo with a specified directory, and setting a column highlight at 120 characters.
-- Performance and Behavior: Setting the time for updating text, setting a minimum number of lines to keep above/below the cursor when scrolling, enabling mouse support, and setting the GUI cursor shape.
+- Performance and Behavior: Setting the time for updating text, setting lines to keep above/below the cursor when scrolling, disabling mouse support, and setting the GUI cursor shape.
 - Window Title and Font: Showing the title bar with a customized format, and setting the GUI font.
 ---
 ### Different and Easy Way of Setting LSPs
@@ -112,17 +109,17 @@ Inside the `syntax` directory, you'll find individual Lua files for each languag
 
 #### Centralized Configuration
 
-To streamline the setup process, I utilize a central file named `servers.lua`. This file serves as a hub for requiring all the individual language server configurations. By requiring this single file in my main lsp configuration file (`lsp-config.lua`), I keep the setup clean, modular, and easy to manage.
+To streamline the setup process, I have a central file named `servers.lua`. This file serves as a hub for requiring all the individual language server configurations. By requiring this single file in my main lsp configuration file (`lsp-config.lua`), I keep the setup clean, modular, and easy to manage.
 
 #### Benefits
 
-- **Modularity:** Each language server configuration is isolated in its own file, making it easy to maintain and customize.
+- **Modularity:** Each language server configuration is isolated in its ownfile, making it easy to maintain and customize.
 - **Simplicity:** The central `servers.lua` file abstracts away the complexity of individual LSP setups, providing a straightforward way to manage all language servers collectively.
 - **Scalability:** Adding or removing language servers is as simple as creating or deleting a file in the `syntax` directory and requiring it in the `servers.lua` file.
 ---
 ### Plugins
 
-I have added some plugins, but I just can't stop expanding and messing around with my config, so the plugins might change in the future.
+I have added some plugins, but I can't stop expanding and messing around with my config, so the plugins might change in the future.
 
 ---
 ## Installation <a name="installation"></a>
@@ -177,7 +174,7 @@ If you encounter any issues during the installation process, consider the follow
 
 Feel free to explore and customize the configuration to suit your preferences. Here are some examples of how you can extend it:
 
-- Add additional plugins to enhance functionality.
+- Add more plugins to enhance functionality.
 - Modify keybindings to align with your preferred workflow.
 - Customize color schemes and themes to personalize your editing environment.
 - You might need to adjust some parts of the config to your pc.
