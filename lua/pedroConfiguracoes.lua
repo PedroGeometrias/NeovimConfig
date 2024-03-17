@@ -1,7 +1,7 @@
 local M = {}
 -- Configuration options for Neovim settings
 M.options = {
-    syntax = "enable",              -- Enable syntax 
+    syntax = "enable",          -- Enable syntax
     autoindent = true,          -- Enable auto-indentation
     smartindent = true,         -- Enable smart-indentation
     tabstop = 4,                -- Set tab width to 4 spaces
@@ -35,7 +35,7 @@ M.options = {
     mouse = "",                 -- Disable mouse support
     guicursor = "a:block",      -- Set GUI cursor to block shape
     title = true,               -- Show the titlebar
-    titlestring = "Neovim - %t",-- Set the titlestring format
+    titlestring = "%t - line %l, col %c",-- Set the titlestring format
     guifont = "MesloLGS NF:h18",-- Set the GUI font
     wrapscan = true,            -- Enable wrapscan, so I can search the whole file
     hidden = true,              -- Switch between files without saving changes 
