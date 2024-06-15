@@ -30,3 +30,7 @@ end
 -- Command to open a preview on the browser
 vim.cmd("command! Markdown lua markdown_preview()")
 
+-- personalized fnd and replace 
+--vim.api.nvim_set_keymap('n', '<leader>fr', ':lua require("lua/mappings/modules/find&replace").search_and_replace()<CR>', { noremap = true, silent = true })
+
+
