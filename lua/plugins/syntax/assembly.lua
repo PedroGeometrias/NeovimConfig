@@ -6,6 +6,6 @@ lspconfig.asm_lsp.setup {
         "asm-lsp"
     },
     root_dir = function(fname)
-        return vim.fn.fnamemodify(fname, ':p:h') -- Set the root directory to the directory of the current file
+        return vim.fn.fnamemodify(fname, ':p:h') 
     end,
 }

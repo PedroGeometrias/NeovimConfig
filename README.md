@@ -60,56 +60,58 @@ This repository contains my personal Neovim configuration.
 
 ## Why <a name="why"></a>
 
-This configuration is meticulously crafted to optimize my Neovim experience, prioritizing seamless navigation within and across files while enhancing cursor movement efficiency, without compromising its fundamental principles, this configuration aims to achieve the following key benefits:
-
-1.   **Efficient Navigation:** Smooth movement within files and across your codebase with streamlined key mappings and intuitive shortcuts, with some plugins that help with that quest.
-
-2.    **Enhanced Cursor Control:** Enjoy precise cursor manipulation and seamless code editing with fine-tuned settings and visual cues.
-
-3.    **Customization Without Compromise:** My main focus was making the configuration process fun, messing with NeoVim's incredible customization capabilities, without removing its essence.
+Having a text editor made for you is almost impossible with the currenty available products on the market. 
+You can only find a handful of applications with the customization properties that allow you to have that type
+of experience. Neovim is of those applications. Thats why I wrote this Configuration, wanting to have all my programming
+need's being fulfilled into the text editor.
 
 ## Main Points <a name="main-points"></a>
 
 ### Key Mappings
+I have seperated my keymappings into four different types of files, I will give a breafy explanation about them
 
-I have created a robust key mappings file, featuring shortcuts for:
+## Custom Commands
 
-- Copying and pasting.
-- Navigation for quick movement within files.
-- Search shortcuts for efficient navigation.
-- Trimming trailing whitespace on file save.
-- Faster scrolling commands.
-- Visual mode adjustments.
-- Quick access to splits, tabs, and the quickfix window.
-- Find and replace functionality.
-- Indentation and screen centering adjustments.
-- File explorer and terminal management.
-- COBOL custom mainframe template autocomplete.
+Here I have declared some functions that make my life easier. Like:
+
+- A cobol template generator, that just puts a pre written a cobol template on the buffer
+- A Markdown viwer, that opens a markdown file as a html on the web using a terminal program, this makes easier to write
+  READMES
+## Navigation
+
+- it only has one command, that gives me faster acsses to the last buffer
+
+## Split and Tab
+
+this honestly is quite complex to explain here, it just makes managing tabs easier in my opnion, like:
+
+- clearing especific tabs by their number
+- getting out of tabs, splits, terminals and the undutree split
+- getting around tabs, split, terminals and the undutree split
+- resizing splits
+
+## Text Manipulation
+
+Mainly to move around a single buffer faster, and so manipulate the contents of the buffer too, like:
+
+- COPY and PASTE mappings.
+- quick fix
+- find&replace
+- Ident the file 
+
 ---
 ### Custom Behavior and Appearance
 
 I've implemented a configuration file inspired by [chris@machine](https://youtu.be/ctH-a-1eUME?si=K0w9GymVUW7bHsXj), with several adjustments:
 
-- Indentation and Formatting: Auto-indentation, smart-indentation, tab width, indentation width, and the use of spaces instead of tabs.
-- Display Settings: Showing matching brackets, line numbers, relative line numbers, width for line numbers, and cursor highlighting.
-- Search and Navigation: Incremental search, search highlighting, case insensitivity, and smart case searching.
-- Split Management: Opening new splits below or to the right of the current split.
-- Terminal and GUI Settings: Enabling true colors in the terminal, always showing the sign column, disabling error bells, disabling line wrapping, and setting the file encoding to UTF-8.
-- Backup and Undo Settings: Disabling backup files, disabling writing backup files before overwriting, disabling swap files, enabling persistent undo with a specified directory, and setting a column highlight at 120 characters.
-- Performance and Behavior: Setting the time for updating text, setting lines to keep above/below the cursor when scrolling, disabling mouse support, and setting the GUI cursor shape.
-- Window Title and Font: Showing the title bar with a customized format, and setting the GUI font.
----
-### Different and Easy Way of Setting LSPs
-
-In this Neovim configuration, I've adopted a unique and modular approach to setting up Language Server Protocols (LSPs). Instead of cluttering the main configuration file with individual LSP setups, I organize them neatly within a separate directory called `syntax`.
-
-#### Modularity and Organization
-
-Inside the `syntax` directory, you'll find individual Lua files for each language server, such as `lua_ls.lua`, `clangd.lua`, `tsserver.lua`, and so on. Each of these files contains the configuration specific to the corresponding language server.
+- I show the number if the tab, works well with my style of navigating through tabs
+- Custom status line, people use plugins for that but I'm a simple man 
+- Custom title String
+- A hole lot of other changes too
 
 #### Centralized Configuration
 
-To streamline the setup process, I have a central file named `servers.lua`. This file serves as a hub for requiring all the individual language server configurations. By requiring this single file in my main lsp configuration file (`lsp-config.lua`), I keep the setup clean, modular, and easy to manage.
+To streamline the lsp's setup process, I have a central file named `servers.lua`. This file serves as a hub for requiring all the individual language server configurations. By requiring this single file in my main lsp configuration file (`lsp-config.lua`), I keep the setup clean, modular, and easy to manage.
 
 #### Benefits
 
@@ -186,4 +188,5 @@ Feel free to explore and customize the configuration to suit your preferences. H
 - [typecraft](https://www.youtube.com/@typecraft_dev)
 - [chris@machine](https://youtu.be/ctH-a-1eUME?si=K0w9GymVUW7bHsXj)
 - probably other's, but I forgot their names and if they exist (sorry...)
+
 

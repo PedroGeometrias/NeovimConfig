@@ -67,7 +67,6 @@ M.options = {
     guicursor = "a:block",      -- Set GUI cursor to block shape
     title = true,               -- Show the titlebar
     titlestring = "%t - line %l, col %c",-- Set the titlestring format
-    guifont = "MesloLGS NF:h18",-- Set the GUI font
     wrapscan = true,            -- Enable wrapscan, so I can search the whole file
     hidden = true,              -- Switch between files without saving changes 
     cursorcolumn = true,        -- Highlights the column where the cursor is located

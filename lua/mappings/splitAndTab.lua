@@ -1,11 +1,10 @@
 local key_mapping = require("keymaps")
-
--- Split commands
+-- -- Split commands
 key_mapping.map("n", "gsv", ":vsp %<CR>") -- open vertical split
 key_mapping.map("n", "gsh", ":sp %<CR>") -- open horizontal split
 key_mapping.map("n", "gn", ":tabnew<CR>") -- open new Tab
 key_mapping.map("n", "cg", ":tabclose!<CR>") -- close current tab
-key_mapping.map("n", "gq", ":%bd|e#<CR>") -- close all buffers except current
+key_mapping.map("n", "gq", ":%bd|e#!<CR>") -- close all buffers except current
 
 -- Split Navigation mappings
 key_mapping.map("n", "<leader><Up>", ":wincmd k<CR>") -- Move to the split above

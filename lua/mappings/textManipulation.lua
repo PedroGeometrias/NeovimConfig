@@ -1,5 +1,4 @@
 local key_mappings = require("keymaps")
-
 --text mannipulation
 
 -- COPY and PASTE new_Mapping.mappings.
@@ -15,6 +14,11 @@ key_mappings.map("n", "<leader>qo", ":copen<CR>") -- Open quickfix window.
 key_mappings.map("n", "<leader>qc", ":cclose<CR>") -- Close quickfix window.
 key_mappings.map("n", "<leader>qn", ":cnext<CR>") -- Jump to the next quickfix item.
 key_mappings.map("n", "<leader>qp", ":cprev<CR>") -- Jump to the previous quickfix item.
+
+-- This is for moving to the end of the line, for copying is jus super easy
+key_mappings.map("n", "L", "$")
+key_mappings.map("v", "L", "$")
+key_mappings.map("n", "dL", "d$")
 
 -- Searching key_mappings.mappings.
 key_mappings.map("n", "#", "#N") -- Search backward for the word under the cursor.
