@@ -25,10 +25,7 @@ key_mappings.map("n", "#", "#N") -- Search backward for the word under the curso
 key_mappings.map("n", "<leader>sh", ":set hlsearch! hlsearch?<CR>") -- Toggle search highlighting.
 
 -- Find and replace text in the whole file.
-key_mappings.map("n", "<leader>fr", ":%s/")
-
--- Find and replace selected text in visual mode.
-key_mappings.map("x", "<leader>fr", [[:s/]], {noremap = true, silent = false})
+key_mappings.map('n', '<Leader>fr', [[(v:count > 0 ? ":\<C-u>.,.+" . v:count : ":%") . 's/\<<C-r><C-w>\>//g<Left><Left>']], {expr = true, noremap = true})
 
 -- Indent entire file key_mappings.mapping.
 key_mappings.map("n", "<leader>f", ":execute 'normal gg=G' | normal!``<CR>")

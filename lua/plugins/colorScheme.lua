@@ -1,9 +1,10 @@
 return {
-    "EdenEast/nightfox.nvim", 
-    lazy = false,
+
+  "tinted-theming/base16-vim",   
     priority = 1000,
     config = function()
-        vim.cmd("colorscheme carbonfox")
+        vim.cmd("colorscheme base16-vesper")
     end,
 }
 
+       

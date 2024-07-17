@@ -1,14 +1,23 @@
-local lspconfig = require('lspconfig')
+require'lspconfig'.cobol_ls.setup {
+    cmd = {"cobol-language-support"},
+    filetypes = { "cobol" },
+    root_dir = function(fname)
+        return vim.fn.getcwd()
+    end,
+    settings = {
+            formatter = {
+                enabled = true,
+                style = {
+                    indent = 4,
+                    lineLength = 80                                                                                     
+                }
+            },
+            diagnostics = {
+                enable = true,
+                showUnused = true,
+                showDeprecated = true
+            },
+        }
+    }
 
-lspconfig.cobol_ls.setup({
-  cmd = { "path/to/cobol-lsp" },  -- Update with the actual path to the cobol-lsp executable
-  on_attach = function(client, bufnr)
-    local bufopts = { noremap=true, silent=true, buffer=bufnr }
-    vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-    vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, bufopts)
-    vim.keymap.set('n', '<leader>gr', vim.lsp.buf.references, bufopts)
-    vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
-  end,
-  capabilities = require('cmp_nvim_lsp').default_capabilities(),
-})
 
