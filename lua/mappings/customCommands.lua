@@ -1,30 +1,41 @@
--- here I'm declaring some commands
+-- ################################# --
+-- Custom Commands  --
+-- Author : PedroGeomerias -- 
+-- ################################# --
 
---function to read the file
+-- ================================= -- 
+-- TEMPLATES
+-- ================================= --
+
+-- --------------------------------- --
+-- C Template
+-- --------------------------------- --
 function c_template()
-    -- Path to the file containing the template
+    -- Path to the file containing the template, it's going to be different for you
     local template_file = "/home/pedro/.config/nvim/lua/cTemplate.c"
 
     -- Execute the :read command to insert the file content into the buffer
-    vim.cmd("read " .. template_file)
+    vim.cmd("read" .. template_file)
 end
 
--- Create the command to generate c template
-vim.cmd("command! -nargs=0 Cmain lua c_template()")
 
+-- --------------------------------- --
+-- Cobol Template
+-- --------------------------------- --
 --function to read the file
 function cobol_mainframe_template()
-    -- Path to the file containing the template
+    -- Path to the file containing the template, it's going to be different for you
     local template_file = "/home/pedro/.config/nvim/lua/cobolTemplate.cob"
 
     -- Execute the :read command to insert the file content into the buffer
     vim.cmd("read " .. template_file)
 end
 
--- Create the command to generate COBOL mainframe template
-vim.cmd("command! -nargs=0 Cobmain lua cobol_mainframe_template()")
+-- ################################# --
+-- Mardown Prev
+-- ################################# --
 
--- for this command you goota install " npm install -g markdown-it markdown-it-html "
+-- for this command you gotta install " npm install -g markdown-it markdown-it-html "
 -- it basically let's you preview markdown code 
 function markdown_preview()
     -- Save the current buffer to a temporary Markdown file
@@ -39,10 +50,21 @@ function markdown_preview()
     os.execute('xdg-open ' .. html_file)
 end
 
--- Command to open a preview on the browser
+-- ################################# --
+-- Commands created 
+-- ################################# --
+
+-- --------------------------------- --
+-- READ COBOL TEMPLATE INTO FILE (:Cobmain) 
+-- --------------------------------- --
+vim.cmd("command! -nargs=0 Cobmain lua cobol_mainframe_template()")
+
+-- --------------------------------- --
+-- READ C TEMPLATE INTO FILE (:Cmain) 
+-- --------------------------------- --
+vim.cmd("command! -nargs=0 Cmain lua c_template()")
+
+-- --------------------------------- --
+-- MARKDOWN PREV COMMAND (:Markdown) 
+-- --------------------------------- --
 vim.cmd("command! Markdown lua markdown_preview()")
-
--- personalized fnd and replace 
---vim.api.nvim_set_keymap('n', '<leader>fr', ':lua require("lua/mappings/modules/find&replace").search_and_replace()<CR>', { noremap = true, silent = true })
-
-

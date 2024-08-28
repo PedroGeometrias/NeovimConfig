@@ -1,35 +1,34 @@
-local key_mappings = require("keymaps")
---text mannipulation
+-- ################################# --
+-- Keys for manipulating text --
+-- Author : PedroGeomerias -- 
+-- ################################# --
 
--- COPY and PASTE new_Mapping.mappings.
-key_mappings.map("x", "<leader>y", '"+y') -- Copy selected text to system clipboard in visual mode.
-key_mappings.map("n", "<leader>p", '"+p') -- Paste from system clipboard.
+local key_mapping = require("keymaps")
 
--- Visual Mode key_mappings.mappings.
-key_mappings.map("x", "<", "<gv") -- Move selected text left.
-key_mappings.map("x", ">", ">gv") -- Move selected text right.
+-- ---------------------
+-- 1. Movement and Rearranging Text
+-- ---------------------
+key_mapping.map("v", "<leader>J", ":m '>+1<CR>gv=gv") -- Move selected block down
+key_mapping.map("v", "<leader>K", ":m '<-2<CR>gv=gv") -- Move selected block up
 
--- Quickfix key_mappings.mappings.
-key_mappings.map("n", "<leader>qo", ":copen<CR>") -- Open quickfix window.
-key_mappings.map("n", "<leader>qc", ":cclose<CR>") -- Close quickfix window.
-key_mappings.map("n", "<leader>qn", ":cnext<CR>") -- Jump to the next quickfix item.
-key_mappings.map("n", "<leader>qp", ":cprev<CR>") -- Jump to the previous quickfix item.
+-- ---------------------
+-- 2. Searching and Replacing Text
+-- ---------------------
+key_mapping.map("n", "<leader>fr", ":%s/\\<<C-r><C-w>\\>//g<Left><Left>") -- Find and replace the word under the cursor
+key_mapping.map("v", "<leader>sr", ":s/\\<<C-r><C-w>\\>//g<Left><Left>") -- Search and replace within selection
 
--- This is for moving to the end of the line, for copying is jus super easy
-key_mappings.map("n", "L", "$")
-key_mappings.map("v", "L", "$")
-key_mappings.map("n", "dL", "d$")
+-- Repeat last search and replace
+key_mapping.map("n", "<leader>rr", ":%&<CR>")
+key_mapping.map("v", "<leader>rr", ":&&<CR>")
 
--- Searching key_mappings.mappings.
-key_mappings.map("n", "#", "#N") -- Search backward for the word under the cursor.
-key_mappings.map("n", "<leader>sh", ":set hlsearch! hlsearch?<CR>") -- Toggle search highlighting.
+-- ---------------------
+-- 3. Text Selection and Manipulation
+-- ---------------------
+key_mapping.map("v", "<leader>y", '"+y') -- Copy selection to system clipboard
+key_mapping.map("v", "<leader>P", '"+P') -- Paste before selection from system clipboard
 
--- Find and replace text in the whole file.
-key_mappings.map('n', '<Leader>fr', [[(v:count > 0 ? ":\<C-u>.,.+" . v:count : ":%") . 's/\<<C-r><C-w>\>//g<Left><Left>']], {expr = true, noremap = true})
-
--- Indent entire file key_mappings.mapping.
-key_mappings.map("n", "<leader>f", ":execute 'normal gg=G' | normal!``<CR>")
-
--- Move selected text up and down in visual mode.
-key_mappings.map("x", "J", ":move '>+1<CR>gv=gv")
-key_mappings.map("x", "K", ":move '<-2<CR>gv=gv")
+-- ---------------------
+-- 4. Formatting and Indentation
+-- ---------------------
+key_mapping.map("n", "<leader>=", "gg=G") -- Reformat the entire file
+key_mapping.map("n", "<leader>f", ":execute 'normal gg=G' | normal!``<CR>") -- Auto-indent the entire file

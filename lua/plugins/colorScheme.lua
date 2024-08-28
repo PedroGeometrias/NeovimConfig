@@ -1,10 +1,10 @@
 return {
-
-  "tinted-theming/base16-vim",   
+    "slugbyte/lackluster.nvim",
+    lazy = false,
     priority = 1000,
-    config = function()
-        vim.cmd("colorscheme base16-vesper")
+    init = function()
+        vim.cmd.colorscheme("lackluster")
+        -- vim.cmd.colorscheme("lackluster-hack") -- my favorite
+        -- vim.cmd.colorscheme("lackluster-mint")
     end,
 }
-
-       

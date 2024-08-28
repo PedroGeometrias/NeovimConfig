@@ -1,6 +1,5 @@
 -- Set the mapleader to space.
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Function to create key mappings.
 local M = {}
