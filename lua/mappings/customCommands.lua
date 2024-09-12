@@ -3,6 +3,8 @@
 -- Author : PedroGeomerias -- 
 -- ################################# --
 
+local key_mappings = require("keymaps")
+
 -- ================================= -- 
 -- TEMPLATES
 -- ================================= --
@@ -17,7 +19,6 @@ function c_template()
     -- Execute the :read command to insert the file content into the buffer
     vim.cmd("read" .. template_file)
 end
-
 
 -- --------------------------------- --
 -- Cobol Template
@@ -68,3 +69,10 @@ vim.cmd("command! -nargs=0 Cmain lua c_template()")
 -- MARKDOWN PREV COMMAND (:Markdown) 
 -- --------------------------------- --
 vim.cmd("command! Markdown lua markdown_preview()")
+
+-- --------------------------------- --
+-- OPEN FIREFOX FROM NEOVIM!!
+-- --------------------------------- --
+key_mappings.map("n", "<leader>sf", ":! wmctrl -a Firefox<CR><CR>")
+
+

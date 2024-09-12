@@ -23,9 +23,9 @@ key_mappings.map("n", "<leader>bp", ":bprevious<CR>") -- Previous buffer
 -- --------------------------------- --
 -- List and select buffers
 -- --------------------------------- --
-key_mappings.map("n", "<leader>bl", ":ls<CR>:b<Space>") -- List buffers and prompt for selection
+key_mappings.map("n", "<leader>bl", ":echo \"Current Buffer ->\"  bufnr()|:ls<CR>:b<Space>") -- List buffers and prompt for selection
 
--- --------------------------------- --
+-- --------------------------------- -our
 -- Open file explorer
 -- --------------------------------- -- 
 key_mappings.map("n", "<leader>e", ":Ex<CR>") -- Open file explorer in current directory

@@ -1,3 +1,4 @@
+-- This plugin basically closes every container
 return {
     'windwp/nvim-autopairs',
     event = "InsertEnter",

@@ -1,4 +1,8 @@
 local M = {}
+-- Global variable to store typed characters
+typed_keys = ""
+
+
 -- Define a function to get the label for a tab
 function my_tab_label(n)
     local buflist = vim.fn.tabpagebuflist(n)
@@ -32,7 +36,7 @@ end
 
 -- Configuration options for Neovim settings
 M.options = {
-    syntax = "enable",          -- Enable syntax
+ syntax = "enable",          -- Enable syntax
     autoindent = true,          -- Enable auto-indentation
     smartindent = true,         -- Enable smart-indentation
     tabstop = 4,                -- Set tab width to 4 spaces
@@ -72,9 +76,30 @@ M.options = {
     cursorcolumn = true,        -- Highlights the column where the cursor is located
     lazyredraw = true,          -- For improve performance
     timeoutlen = 970,          -- setting the time for a mapped key
-    laststatus=2,
-    statusline = "%{fnamemodify(expand('%:p'), ':~:.')} | Type %y, Num %n | Line %l of %L, File : %P |%="
+    statusline = "%!v:lua.MyStatusLine()" -- Custom status line
 }
+
+-- Global function to update the typed characters in the status line
+function update_typed_keys(char)
+    typed_keys = typed_keys .. char
+    if #typed_keys > 10 then
+        typed_keys = string.sub(typed_keys, -16)
+    end
+    vim.cmd("redrawstatus")
+end
+
+-- Autocommand to capture typed characters in Insert mode
+vim.api.nvim_exec([[
+    augroup TypedKeys
+        autocmd!
+        autocmd InsertCharPre * lua update_typed_keys(vim.v.char)
+    augroup END
+]], false)
+
+-- Status line function to show typed keys
+function MyStatusLine()
+    return "%{fnamemodify(expand('%:p'), ':~:.')} | Type %y, Num %n | Line %l of %L | " .. typed_keys .. " |%="
+end
 
 -- Apply configurations to Neovim
 function M.setup()
@@ -95,3 +120,4 @@ function M.setup()
 end
 
 return M
+
