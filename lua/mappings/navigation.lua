@@ -29,7 +29,6 @@ key_mappings.map("n", "<leader>bl", ":echo \"Current Buffer ->\"  bufnr()|:ls<CR
 -- Open file explorer
 -- --------------------------------- -- 
 key_mappings.map("n", "<leader>e", ":Ex<CR>") -- Open file explorer in current directory
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex) -- Open netrw
 
 -- ================================= -- 
 -- Search Navigation

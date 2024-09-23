@@ -15,7 +15,7 @@ key_mapping.map("v", "<leader>K", ":m '<-2<CR>gv=gv") -- Move selected block up
 -- 2. Searching and Replacing Text
 -- ---------------------
 key_mapping.map("n", "<leader>fr", ":%s/\\<<C-r><C-w>\\>//g<Left><Left>") -- Find and replace the word under the cursor
-key_mapping.map("v", "<leader>sr", ":s/\\<<C-r><C-w>\\>//g<Left><Left>") -- Search and replace within selection
+key_mapping.map("v", "<leader>sr", ":%s/\\<<C-r><C-w>\\>//g<Left><Left>") -- Search and replace within selection
 
 -- Repeat last search and replace
 key_mapping.map("n", "<leader>rr", ":%&<CR>")
@@ -26,9 +26,3 @@ key_mapping.map("v", "<leader>rr", ":&&<CR>")
 -- ---------------------
 key_mapping.map("v", "<leader>y", '"+y') -- Copy selection to system clipboard
 key_mapping.map("v", "<leader>P", '"+P') -- Paste before selection from system clipboard
-
--- ---------------------
--- 4. Formatting and Indentation
--- ---------------------
-key_mapping.map("n", "<leader>=", "gg=G") -- Reformat the entire file
-key_mapping.map("n", "<leader>f", ":execute 'normal gg=G' | normal!``<CR>") -- Auto-indent the entire file

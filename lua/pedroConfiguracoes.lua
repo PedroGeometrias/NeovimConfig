@@ -2,7 +2,6 @@ local M = {}
 -- Global variable to store typed characters
 typed_keys = ""
 
-
 -- Define a function to get the label for a tab
 function my_tab_label(n)
     local buflist = vim.fn.tabpagebuflist(n)
@@ -98,7 +97,7 @@ vim.api.nvim_exec([[
 
 -- Status line function to show typed keys
 function MyStatusLine()
-    return "%{fnamemodify(expand('%:p'), ':~:.')} | Type %y, Num %n | Line %l of %L | " .. typed_keys .. " |%="
+    return "%{fnamemodify(expand('%:p'), ':~:.')} | Type %y, Num %n | Line %l of %L | " .. "Typed : ".. typed_keys .. " |%="
 end
 
 -- Apply configurations to Neovim

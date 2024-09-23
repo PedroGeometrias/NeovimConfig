@@ -75,7 +75,7 @@ key_mapping.map("n", "<leader><Right>", ":wincmd l<CR>") -- Move to the split on
 -- ================================= --
 
 -- --------------------------------- --
--- Termina management 
+-- Terminal management 
 -- --------------------------------- -- 
 key_mapping.map("n", "gtt", ":tabnew | term<CR>") -- Open a terminal in a new tab
 key_mapping.map("n", "gtb", ":belowright split term://bash<CR>") -- Open a terminal below
