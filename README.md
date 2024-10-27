@@ -93,7 +93,7 @@ Before proceeding with the installation, ensure you have Neovim installed on you
     git clone https://github.com/PedroGeometrias/NeovimConfig C:\Users\YourUsername\AppData\Local\nvim
     ```
 
-    > **Note:** If you're unsure about your username or the exact path, you can open File Explorer, navigate to  `C:\Users`, you can open File Explorer, navigate to `C:\Users`, and find your username folder.
+    > **Note:** If you're unsure about your username or the exact path, you can open File Explorer, navigate to  `C:\Users`, and find your username folder.
 
 ---
 
