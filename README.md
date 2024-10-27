@@ -55,7 +55,7 @@ This config is mainly focused on navigating between tabs and buffers in a fast w
 #### Main Changes
 Centralized Configuration
 
-- To streamline the LSP setup process, I have a central file named servers.lua. This file serves as a hub for requiring all the individual language server configurations. So I require this single file in my main LSP configuration file (lsp-config.lua).
+- To streamline the LSP setup process, I have a central file named servers.lua. This file serves as a hub for requiring all the individual language server configurations. To make it work, I require this single file in my main LSP configuration file (lsp-config.lua).
 
 #### Key Mappings
 
