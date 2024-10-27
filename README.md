@@ -75,7 +75,7 @@ Before proceeding with the installation, ensure you have Neovim installed on you
 - [Neovim installed](https://neovim.io/)
 - [Git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Linux Installation:
+### Linux Installation (The right way):
 
 1. Clone this repository to your Neovim configuration directory (Make a back up before doing this):
 
