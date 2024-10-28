@@ -17,7 +17,7 @@ function c_template()
     local template_file = "/home/pedro/.config/nvim/lua/cTemplate.c"
 
     -- Execute the :read command to insert the file content into the buffer
-    vim.cmd("read" .. template_file)
+    vim.cmd("read " .. template_file)
 end
 
 -- --------------------------------- --
