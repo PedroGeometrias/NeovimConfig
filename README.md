@@ -4,47 +4,52 @@ This repo contains my personal Neovim config.
 
 ## Directory Structure
 ```
-.config/nvim
+.
 ├── init.lua
+├── lazy-lock.json
 ├── lua
-|   ├── /plugins   
-|   |   │   └── /syntax
-|   |   │       ├── assembly.lua
-|   |   │       ├── clangd.lua
-|   |   │       ├── html.lua
-|   |   │       ├── lua_ls.lua
-|   |   │       ├── markdown.lua
-|   |   │       ├── servers.lua
-|   |   │       ├── tsserver.lua
-|   |   │       ├── vim.lua
-|   |   │       └── ...
-|   │   ├── auto-pairs.lua
-|   │   ├── cmp.lua
-|   │   ├── cobol.lua
-|   │   ├── colorizer.lua
-|   │   ├── colorScheme.lua
-|   │   ├── comment.lua
-|   │   ├── harpoon.lua
-|   │   ├── lsp-config.lua
-|   │   ├── null-ls.lua
-|   │   ├── plenary.lua
-|   │   ├── telescope.lua
-|   │   ├── tressiter.lua
-│   |   └── ...
-│   ├── /mappings
-│   │   ├── customCommands.lua
-│   │   ├── navigation.lua
-│   │   ├── splitAndTab.lua
-│   │   ├── textManipulation.lua
-│   │   └── ...
-│   ├── cobolTemplate.cob
-│   ├── plugins.lua
-│   ├── pedroConfiguracoes.lua
-│   ├── keymaps.lua
-│   ├── requireMappings.lua
-│   └── ...
+│   ├── cobolTemplate.cob
+│   ├── keymaps.lua
+│   ├── mappings
+│   │   ├── customCommands.lua
+│   │   ├── navigation.lua
+│   │   ├── splitAndTab.lua
+│   │   └── textManipulation.lua
+│   ├── pedroConfiguracoes.lua
+│   ├── plugins
+│   │   ├── autopairs.lua
+│   │   ├── cmp.lua
+│   │   ├── colorizer.lua
+│   │   ├── colorScheme.lua
+│   │   ├── comment.lua
+│   │   ├── discord.lua
+│   │   ├── lsp-config.lua
+│   │   ├── null-ls.lua
+│   │   ├── plenary.lua
+│   │   ├── telescope.lua
+│   │   ├── tressiter.lua
+│   │   └── undutree.lua
+│   ├── requireMappings.lua
+│   └── syntax
+│       ├── assembly.lua
+│       ├── awk.lua
+│       ├── bash.lua
+│       ├── clangd.lua
+│       ├── cobol_ls.lua
+│       ├── _common.lua
+│       ├── css.lua
+│       ├── html.lua
+│       ├── lua_ls.lua
+│       ├── python.lua
+│       ├── servers.lua
+│       ├── ts_ls.lua
+│       ├── typos_lsp.lua
+│       └── vim.lua
+├── main.css
 ├── README.md
-└── ...
+└── usage_data.json
+
+4 directories, 39 files
 ```
 > **Note:** It's an illustration, my configuration is always changing.
 

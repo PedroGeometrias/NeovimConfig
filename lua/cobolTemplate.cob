@@ -1,27 +1,23 @@
+      *>> simple identification stuff
        IDENTIFICATION DIVISION.
-       
-       PROGRAM-ID. YOUR-PROGRAM-NAME.
-       AUTHOR. PEDRO DE OLIVEIRA HARO.
-       DATE-WRITTEN. CURRENT-DATE.
-
+       PROGRAM-ID. BURNING_SHIP.
+       AUTHOR. PEDRO HARO.
+       REMARKS. This program is meant to render a fractal on the window,
+           using exposed SDL2 functions.
+      *>> declaring my environment
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
-       SOURCE-COMPUTER. YOUR-MACHINE-TYPE.
-       OBJECT-COMPUTER. YOUR-MACHINE-TYPE.
-
+       SOURCE-COMPUTER. Min_Linux_x64.
+       OBJECT-COMPUTER.  Min_Linux_x64.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+       I-O-CONTROL.
+      *>> place where I declare my variables
        DATA DIVISION.
+       FILE SECTION.
        WORKING-STORAGE SECTION.
-       01 WS-VARIABLES.
-          05 WS-VAR1 PIC
-              X(10).                                                    
-          05 WS-VAR2 PIC 9(5).
-
+       LINKAGE SECTION.
        PROCEDURE DIVISION.
-       MAIN-PROCEDURE.
-          DISPLAY 'Hello, world!'.
-          MOVE 'COBOL' TO WS-VAR1.
-          MOVE 12345 TO WS-VAR2.
-          DISPLAY 'WS-VAR1: ' WS-VAR1.
-          DISPLAY 'WS-VAR2: ' WS-VAR2.
-          STOP RUN.
-
+           DISPLAY "HELLO WORLD FROM COBOL"
+           STOP RUN.
+      

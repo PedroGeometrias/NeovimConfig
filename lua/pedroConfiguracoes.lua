@@ -35,7 +35,7 @@ end
 
 -- Configuration options for Neovim settings
 M.options = {
- syntax = "enable",          -- Enable syntax
+    syntax = "enable",          -- Enable syntax
     autoindent = true,          -- Enable auto-indentation
     smartindent = true,         -- Enable smart-indentation
     tabstop = 4,                -- Set tab width to 4 spaces
@@ -46,8 +46,8 @@ M.options = {
     relativenumber = true,      -- Show relative line numbers
     numberwidth = 4,            -- Set width for line numbers
     incsearch = true,           -- Incremental search
-    hlsearch = false,           -- Disable search highlighting
-    ignorecase = true,          -- Case insensitive searching
+    hlsearch = true,            -- Enable search highlighting
+    ignorecase = true,          -- Case sensitive searching
     smartcase = true,           -- Use smart case for searching
     splitbelow = true,          -- Open new split below current split
     splitright = true,          -- Open new split to the right of current split
@@ -63,10 +63,10 @@ M.options = {
     -- Set directory for undo files
     undodir = os.getenv("HOME") and os.getenv("HOME") .. "/.vim/undodir" or vim.fn.stdpath("data") .. "/undodir", 
     undofile = true,            -- Enable persistent undo
-    colorcolumn = "120",        -- Highlight column at 120 characters
+    colorcolumn = "106",        -- Highlight column at 100 characters                                          
     updatetime = 20,            -- Set time (in milliseconds) for updating text
     scrolloff = 15,             -- Set minimum lines to keep above/below cursor when scrolling
-    mouse = '',-- Disable mouse support
+    mouse = '',                 -- Disable mouse support
     guicursor = "a:block",      -- Set GUI cursor to block shape
     title = true,               -- Show the titlebar
     titlestring = "%t - line %l, col %c",-- Set the titlestring format
