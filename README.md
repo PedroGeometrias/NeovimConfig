@@ -66,10 +66,10 @@ Centralized Configuration
 
 I have created a directory to organize my key mappings in a semi-logical way, works well enough for me:
 
-- **Custom Commands**: These mappings simplify actions like loading custom templates or quickly switching to Firefox.
-- **Navigation**: Custom mappings for smooth buffer and file navigation, including quick buffer listing and selection.
-- **Split and Tab Management**: Efficiently handle tabs and splits for multi-file workflows with single-key mappings.
-- **Text Manipulation**: Mappings for quick text operations like moving lines or blocks, and find-and-replace.
+- **Custom Commands**: These mappings simplify actions or integrate other tools into NeoVim.
+- **Navigation**: Custom mappings for buffer and file navigation, including quick buffer listing and selection.
+- **Split and Tab Management**: Here I handle tabs and splits.
+- **Text Manipulation**: Text related mappings.
 
 
 ## Installation                                                                                                   
@@ -80,7 +80,7 @@ Before proceeding with the installation, ensure you have Neovim installed on you
 - [Neovim installed](https://neovim.io/)
 - [Git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Linux Installation (The right way):
+### Linux Installation:
 
 1. Clone this repository to your Neovim configuration directory (Make a back up before doing this):
 
